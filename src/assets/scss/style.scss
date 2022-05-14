@@ -1,0 +1,36 @@
+@import "vars";
+@import "vendor/reset";
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    background-color: #FBFBFB;
+
+    font-family: 'Gilroy';
+    font-size: 1.4rem;
+    line-height: 1.5;
+    color: $white;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
+
+/* Blocks */
+@import "blocks/fonts/stylesheet.scss";
+@import "blocks/header/header.scss";
+@import "blocks/preheader/preheader.scss";
+@import "blocks/btn/btn.scss";
+@import "blocks/bootstrap/bootstrap.scss";
+@import "blocks/card/card.scss";
+@import "blocks/preheader-card/preheader-card.scss";
+@import "blocks/search/search.scss";
+@import "blocks/block-for/block-for.scss";
+
+
+

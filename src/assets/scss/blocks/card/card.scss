@@ -1,0 +1,47 @@
+.card {
+    border-radius: 20px;
+}
+.card__background--light {
+    background: linear-gradient(304.39deg, rgba(0, 0, 0, 0.07) 29.68%, rgba(255, 255, 255, 0) 100%);
+    backdrop-filter: blur(100px);
+}
+.card__background--green {
+    background: linear-gradient(95.57deg, #081C18 4.47%, #124336 90.17%);    
+    backdrop-filter: blur(100px);
+    filter: drop-shadow(15px 30px 40px rgba(0, 0, 0, 0.15));
+}
+.card__background--black {
+    background: linear-gradient(95.57deg, #000000 4.47%, #000000 4.48%, #2F3136 90.17%); 
+    backdrop-filter: blur(100px);
+    filter: drop-shadow(15px 30px 40px rgba(0, 0, 0, 0.15));
+}
+.card__background--white {
+    background: linear-gradient(286.27deg, #F7F7F7 19.3%, #F7F7F7 49.19%, #A6A6A6 340.15%);
+    backdrop-filter: blur(100px);
+    filter: drop-shadow(15px 30px 40px rgba(0, 0, 0, 0.15));
+}
+.card__title {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 130%;
+}
+.card__title--white {
+    color: #fff;
+}
+.card__title--black {
+    color: #000000;
+}
+.card__title--bold {
+    font-weight: bold;
+}
+.card__width--306 {
+    max-width: 306px;
+}
+.card__img {
+    width: 100%;
+    height: auto;
+}
+.class {
+    max-width: 100%;
+    width: 100%;
+}

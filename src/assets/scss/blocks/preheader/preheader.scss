@@ -1,0 +1,37 @@
+.preheader {
+    background: linear-gradient(97.18deg, #020204 7.92%, #154E3F 100.31%);
+    border-radius: 0px 0px 103px 103px;
+    padding-top: 150px;
+}
+.preheader__all {
+    padding-bottom: 230px;
+}
+.preheader__background--main {
+    position: relative;
+}
+.preheader__background--main::after {
+    display: block;
+    content: '';
+    background-image: url(../images/main/preheader-bg.png);
+    position: absolute;
+    width: 1144px;
+    height: 718px;
+    bottom: 0;
+    right: 15%;
+}
+.preheader__container {
+    max-width: 1100px;
+    margin: 0 auto;
+}
+.preheader__subtitle {
+    font-weight: 400;
+    font-size: 26px;
+    line-height: 130%;
+    margin-bottom: 44px;
+}
+.preheader__title {
+    font-weight: 700;
+    font-size: 42px;
+    line-height: 130%;
+    margin-bottom: 44px;
+}
