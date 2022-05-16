@@ -1,0 +1,32 @@
+@media screen and (max-width: 1340px) {
+    .block-for__card {
+        max-width: 270px;
+    }
+}
+@media screen and (max-width: 1200px) {
+    .block-for__card {
+        max-width: 230px;
+    }
+}
+@media screen and (max-width: 992px) {
+    .block-for__card {
+        max-width: 339px;
+        width: 100%;
+        justify-content: space-between;
+    }
+}
+@media screen and (max-width: 768px) {
+    .block-for {
+        padding: 0 17.5px;
+    }
+    .block-for__wrapper {
+        row-gap: 20px;
+        column-gap: 10px;
+        justify-content: center;
+    }
+}
+@media screen and (max-width: 425px) {
+    .block-for {
+        padding: 0 7.5px;
+    }
+}

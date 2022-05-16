@@ -2,7 +2,11 @@
     margin-top: -63px;
     height: 180px;
 }
-
+.preheader-card__wrapper {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
 .btn__preheader-card {
     margin-top: 20px;
     display: none;

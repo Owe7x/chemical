@@ -5,12 +5,26 @@
     justify-content: center;
     align-items: center;
     width: 100%;
+    cursor: pointer;
+}
+.btn--green {
+    background: #154E3F;
+    color: #fff;
 }
 .btn--white {
     background: #FFFFFF;
 }
+.btn--gray {
+    background: #ECF2F1;
+}
+.btn--w_388 {
+    max-width: 388px;
+}
 .btn--w_306 {
     max-width: 306px;
+}
+.btn--w_211 {
+    max-width: 211px;
 }
 .btn--w_189 {
     max-width: 189px;
@@ -38,4 +52,7 @@
     font-size: 16px;
     line-height: 130%;
     color: #000000;
+}
+.btn__link--white {
+    color: #fff;
 }

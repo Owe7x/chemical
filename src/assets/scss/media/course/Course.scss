@@ -1,0 +1,70 @@
+@media screen and (max-width: 992px) {
+    .course {
+        padding: 0 25px;
+    }
+    .course__blocks {
+        flex-direction: column;
+        max-width: 720px;
+        margin: 0 auto;
+        border-radius: 20px;
+        overflow: hidden;
+    }
+    .course__block {
+        width: 100%;
+    }
+    .course__block:first-child {
+        border-radius: unset;
+    }
+    .course__block:last-child {
+        border-radius: unset;
+    }
+    .course__sum {
+        max-width: 622px;
+    }
+    .course__tip {
+        max-width: 622px;
+    }
+    .course__block-header {
+        max-width: 622px;
+    }
+    .course__blocks-btn {
+        max-width: 622px;
+        margin: 30px auto 0;
+    }
+    .course__block-btn {
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .course__block {
+        padding: 38px 41px 25px;
+    }
+}
+@media screen and (max-width: 576px) { 
+    .course__block {
+        padding: 25px 20px;
+    }
+}
+@media screen and (max-width: 425px) { 
+    .course {
+        padding: 0;
+    }
+    .course__title {
+        padding: 0 15px;
+    }
+    .course__blocks {
+        border-radius: 0;
+    }
+    .course__block:last-child {
+        overflow-x: scroll;
+    }
+    .course__blocks-btn {
+        flex-direction: column;
+        justify-content: center;
+        row-gap: 25px;
+    }
+    .course__block-btn {
+        width: 100%;
+    }
+}

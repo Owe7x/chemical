@@ -93,7 +93,7 @@
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-eval("\n\n//# sourceURL=webpack:///./src/assets/js/app.js?");
+eval("$('body').on('click', '.js-burger-toggle-revolve', function(e) {\r\n    e.preventDefault();\r\n    $(this).toggleClass('revolve');\r\n});\r\nvar accordion = document.getElementById('accordion');\r\n\t\taccordion.addEventListener('click', change);\r\n\t\tfunction change(event) {\r\n\t\t\tvar targ = event.target;\r\n\t\t\tif (targ.tagName !== 'P') return;\r\n\t\t\tif (targ.classList.contains('nav__title-active')) {\r\n\t\t\t\thideAll();\r\n\t\t\t} else {\r\n\t\t\t\thideAll();\r\n\t\t\t\ttarg.classList.add('nav__title-active');\r\n\t\t\t\tshowText(targ.nextElementSibling);\r\n\t\t\t}\r\n\t\t}\r\n\t\tfunction hideAll() {\r\n\t\t\tvar h3El = accordion.querySelectorAll('p');\r\n            console.log(h3El);\r\n\t\t\tvar divEl = accordion.querySelectorAll('.nav__list');\r\n\t\t\tfor (var i = 0; i < h3El.length; i++) {\r\n\t\t\t\th3El[i].classList.remove('nav__title-active');\r\n\t\t\t}\r\n\t\t\tfor (var i = 0; i < divEl.length; i++) {\r\n\t\t\t\tdivEl[i].style.height = '0';\r\n\t\t\t}\r\n\t\t}\r\n\t\tfunction showText(textEl) {\r\n\t\t\ttextEl.style.height = textEl.scrollHeight + 'px';\r\n\t\t}\r\n\t\n\n//# sourceURL=webpack:///./src/assets/js/app.js?");
 
 /***/ }),
 

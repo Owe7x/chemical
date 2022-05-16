@@ -1,0 +1,72 @@
+@mixin transform($property) {
+    transform: $property;
+    -webkit-transform: $property;
+    -moz-transform: $property;
+    -ms-trasform: $property;
+  }
+  
+@mixin transition($property){
+    transition: $property;
+    -webkit-transition: $property;
+    -moz-transition: $property;
+    -ms-transition: $property;
+}
+
+.js-burger-toggle-revolve {
+    display: none;
+    align-self: center;;
+    max-height: 80px;
+    cursor: pointer;
+    .inner {
+      width: 23px;
+      height: 14px;
+      margin: 0px auto;
+      position: relative;
+      span {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 23px;
+        height: 3px;
+        background-color: #000;
+        transition: top 0.2s ease-in-out 0.4s, transform 0.4s ease-in-out, opacity 0.2s ease-in-out 0.2s, left 0.2s ease-in-out;
+        -webkit-transition: top 0.2s ease-in-out 0.4s, transform 0.4s ease-in-out, opacity 0.2s ease-in-out 0.2s, left 0.2s ease-in-out;
+        -moz-transition: top 0.2s ease-in-out 0.4s, transform 0.4s ease-in-out, opacity 0.2s ease-in-out 0.2s, left 0.2s ease-in-out;
+        -ms-transition: top 0.2s ease-in-out 0.4s, transform 0.4s ease-in-out, opacity 0.2s ease-in-out 0.2s, left 0.2s ease-in-out;
+        &:nth-child(1) {
+          top: 0;
+        }
+        &:nth-child(2), &:nth-child(4) {
+          top: 9px;
+        }
+        &:nth-child(3) {
+          top: 18px;
+        }
+      }// end span
+    }
+    &.revolve {
+    .inner {
+      span {
+        transition: top 0.2s ease-in-out, transform 0.4s ease-in-out 0.2s, opacity 0.1s ease-in-out 0.2s, left 0.4s ease-in-out;
+        -webkit-transition: top 0.2s ease-in-out, transform 0.4s ease-in-out 0.2s, opacity 0.1s ease-in-out 0.2s, left 0.4s ease-in-out;
+        -moz-transition: top 0.2s ease-in-out, transform 0.4s ease-in-out 0.2s, opacity 0.1s ease-in-out 0.2s, left 0.4s ease-in-out;
+        -ms-transition: top 0.2s ease-in-out, transform 0.4s ease-in-out 0.2s, opacity 0.1s ease-in-out 0.2s, left 0.4s ease-in-out;
+        &:nth-child(1) {
+          transform-origin: center;
+          @include transform( rotateY(90deg) );
+        }
+        &:nth-child(2) {
+          @include transform( rotate(45deg) );
+        }
+        &:nth-child(4) {
+          @include transform( rotate(-45deg) );
+        }
+        &:nth-child(3) {
+          transform-origin: center;
+          @include transform( rotateY(90deg) );
+        }
+      }
+    }
+  }//end revolve
+}
+

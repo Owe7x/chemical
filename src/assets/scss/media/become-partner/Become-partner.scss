@@ -1,0 +1,27 @@
+@media screen and (max-width: 992px) {
+    .become-partner__more {
+        display: none;
+    }
+    .become-partner__more--mb {
+        display: block;
+        margin-top: 40px;
+    }
+}
+@media screen and (max-width: 768px) {
+    .become-partner__wrapper {
+        flex-direction: column;
+        align-items: center;
+        row-gap: 20px;
+        padding: 30px;
+    }
+    .become-partner__more {
+        display: block;
+        align-self: flex-end;
+    }
+    .become-partner__title {
+        align-self: flex-start;
+    }
+    .become-partner__more--mb {
+        display: none;
+    }
+}

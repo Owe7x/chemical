@@ -1,0 +1,26 @@
+@media screen and (max-width: 992px) {
+    .footer__wrapper {
+        flex-direction: column;
+        padding: 90px 0 30px;
+    }
+    .footer__heroin {
+        margin-top: 60px;
+    }
+}
+@media screen and (max-width: 768px) {
+    .footer {
+        padding: 0 17.5px;
+    }
+    .footer__wrapper {
+        padding: 60px 0 30px;
+    }
+}
+@media screen and (max-width: 425px) {
+    .footer__time {
+        flex-direction: column;
+        row-gap: 25px;
+    }
+    .footer__text--m-64 {
+        margin-bottom: 40px;
+    }
+}

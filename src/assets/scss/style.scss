@@ -7,10 +7,10 @@ html {
 
 body {
     background-color: #FBFBFB;
-
+    font-weight: 400;
     font-family: 'Gilroy';
     font-size: 1.4rem;
-    line-height: 1.5;
+    line-height: 130%;
     color: $white;
 }
 
@@ -31,6 +31,22 @@ body {
 @import "blocks/preheader-card/preheader-card.scss";
 @import "blocks/search/search.scss";
 @import "blocks/block-for/block-for.scss";
-
+@import "blocks/become-partner/become-partner.scss";
+@import "blocks/course/course.scss";
+@import "blocks/nav/nav.scss";
+@import "blocks/footer/footer.scss";
+@import "blocks/menu/menu.scss";
+@import "media/menu/Menu.scss";
+@import "media/preheader/Preheader.scss";
+@import "media/card/Card.scss";
+@import "media/block-for/Block-for.scss";
+@import "media/search/Search.scss";
+@import "media/header/Header.scss";
+@import "media/preheader-card/Preheader-card.scss";
+@import "media/become-partner/Become-partner.scss";
+@import "media/course/Course.scss";
+@import "media/btn/Btn.scss";
+@import "media/nav/Nav.scss";
+@import "media/footer/Footer.scss";
 
 

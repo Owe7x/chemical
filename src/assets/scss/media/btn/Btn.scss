@@ -1,0 +1,25 @@
+@media screen and (max-width: 992px) {
+    .btn--w_306 {
+        max-width: 236px;
+    }    
+}
+@media screen and (max-width: 576px) {
+    .btn--w_189 {
+        max-width: 174px;
+    }   
+    .btn--h_63 {
+        height: 58px;
+    }
+    .btn__link--fs_24 {
+        font-size: 19px;
+    }
+    .btn--preheader {
+        align-self: flex-end;
+    }
+}
+@media screen and (max-width: 425px) {
+    .btn__search {
+        width: 100%;
+        max-width: 100%;
+    }
+}

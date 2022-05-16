@@ -1,0 +1,36 @@
+.nav {
+    background: linear-gradient(89.83deg, #030909 2.99%, #124336 99.86%);
+}
+.nav__wrapper {
+    padding: 80px 0 80px 0;
+    display: flex;
+    column-gap: 50px;
+}
+.nav__block {
+    max-width: 390px;
+}
+.nav__title {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 130%;
+    color: #FFFFFF;
+    margin-bottom: 30px;
+}
+.nav__link {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 130%;
+    color: #FFFFFF;
+    text-decoration: none;
+}
+.nav__item {
+    margin-bottom: 25px;
+}
+.nav__title--link {
+    margin-top: 64px;
+    text-decoration: none;
+    display: block;
+}
+.nav__block--mb {
+    display: none;
+}
