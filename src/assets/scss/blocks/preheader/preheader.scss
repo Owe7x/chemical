@@ -3,12 +3,11 @@
     border-radius: 0px 0px 103px 103px;
     padding-top: 150px;
     overflow-x: hidden;
+    padding-bottom: 40px;
+    position: relative;
 }
 .preheader__all {
     padding-bottom: 230px;
-}
-.preheader__background--main {
-    position: relative;
 }
 .preheader__background--main::after {
     display: block;
@@ -17,6 +16,16 @@
     position: absolute;
     width: 1144px;
     height: 718px;
+    bottom: 0;
+    right: 15%;
+}
+.preheader__background--business::after {
+    display: block;
+    content: '';
+    background-image: url(../images/business/preheader-bg.png);
+    position: absolute;
+    width: 785px;
+    height: 299px;
     bottom: 0;
     right: 15%;
 }

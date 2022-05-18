@@ -16,3 +16,8 @@
         padding: 24px 35px 24px 35px;
     }
 }
+@media screen and (max-width: 425px) {
+    .card__subtitle {
+        font-size: 16px;
+    }
+}

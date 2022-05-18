@@ -396,13 +396,12 @@ body {
   background: linear-gradient(97.18deg, #020204 7.92%, #154E3F 100.31%);
   border-radius: 0px 0px 103px 103px;
   padding-top: 150px;
-  overflow-x: hidden; }
+  overflow-x: hidden;
+  padding-bottom: 40px;
+  position: relative; }
 
 .preheader__all {
   padding-bottom: 230px; }
-
-.preheader__background--main {
-  position: relative; }
 
 .preheader__background--main::after {
   display: block;
@@ -411,6 +410,16 @@ body {
   position: absolute;
   width: 1144px;
   height: 718px;
+  bottom: 0;
+  right: 15%; }
+
+.preheader__background--business::after {
+  display: block;
+  content: '';
+  background-image: url(../images/business/preheader-bg.png);
+  position: absolute;
+  width: 785px;
+  height: 299px;
   bottom: 0;
   right: 15%; }
 
@@ -8746,6 +8755,14 @@ textarea.form-control-lg {
   backdrop-filter: blur(100px);
   filter: drop-shadow(15px 30px 40px rgba(0, 0, 0, 0.15)); }
 
+.card__background--green-light {
+  background: #83D2B6;
+  filter: drop-shadow(15px 30px 40px rgba(0, 0, 0, 0.15)); }
+
+.card__background--green-medium {
+  background: #207660;
+  filter: drop-shadow(15px 30px 40px rgba(0, 0, 0, 0.15)); }
+
 .card__title {
   font-weight: 400;
   font-size: 20px;
@@ -8762,6 +8779,15 @@ textarea.form-control-lg {
 
 .card__width--306 {
   max-width: 306px; }
+
+.card__subtitle {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 130%;
+  color: #000000; }
+
+.card__subtitle--white {
+  color: #fff; }
 
 .preheader-card {
   margin-top: -63px;
@@ -9230,6 +9256,80 @@ textarea.form-control-lg {
       -moz-transform: rotateY(90deg);
       -ms-trasform: rotateY(90deg); }
 
+.business {
+  margin: 90px 0; }
+
+.business-card {
+  margin-bottom: 120px; }
+
+.business__text {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 130%;
+  color: #154E3F;
+  margin: 0 0 16px; }
+
+.business__text-2 {
+  font-weight: 400;
+  font-size: 18px;
+  color: #000000;
+  line-height: 130%; }
+
+.business-card__card {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 20px 0 20px; }
+
+.business-card__card--2 {
+  display: flex;
+  flex-direction: column;
+  padding: 0 20px 20px 20px; }
+
+.business-card__card--column {
+  flex-direction: column; }
+
+.business-card__wrapper {
+  display: grid;
+  gap: 20px;
+  grid-template-areas: "A A A B   B B B B   B B C C" "A A A D   D D D D   D E E E" "F F F F   F F F G   G G G G"; }
+
+.grid-1 {
+  grid-area: A;
+  height: 362px; }
+
+.grid-2 {
+  grid-area: B;
+  height: 169px; }
+
+.grid-3 {
+  grid-area: C;
+  height: 169px; }
+
+.grid-4 {
+  grid-area: D;
+  height: 169px; }
+
+.grid-5 {
+  grid-area: E;
+  height: 169px; }
+
+.grid-6 {
+  grid-area: F;
+  height: 169px; }
+
+.grid-7 {
+  grid-area: G;
+  height: 169px; }
+
+.card__title--business {
+  padding-top: 20px; }
+
+.card__img--right {
+  display: block;
+  margin-left: auto; }
+
 @media screen and (max-width: 992px) {
   .js-burger-toggle-revolve {
     display: block; } }
@@ -9306,6 +9406,10 @@ textarea.form-control-lg {
     max-width: 339px;
     padding: 24px 35px 24px 35px; } }
 
+@media screen and (max-width: 425px) {
+  .card__subtitle {
+    font-size: 16px; } }
+
 @media screen and (max-width: 1340px) {
   .block-for__card {
     max-width: 270px; } }
@@ -9376,7 +9480,9 @@ textarea.form-control-lg {
 
 @media screen and (max-width: 992px) {
   .header__ul {
-    display: none; } }
+    display: none; }
+  .header__container {
+    padding: 0 25px; } }
 
 @media screen and (max-width: 768px) {
   .header__container {
@@ -9545,6 +9651,90 @@ textarea.form-control-lg {
     width: 100%; }
   .nav__wrapper {
     padding: 80px 50px; } }
+
+@media screen and (max-width: 1340px) {
+  .preheader__background--business::after {
+    right: 5%; } }
+
+@media screen and (max-width: 1200px) {
+  .business-card__wrapper {
+    grid-template-areas: "A A A A   A A C C   C C C C"  "A A A A   A A E E   E E E E" "B B B B   B B B B   B B B B" "D D D D   D D D D   D D D D" "F F F F   F F F F   F F F F"  "G G G G   G G G G   G G G G"; }
+  .card__title--business {
+    margin-bottom: 23px; }
+  .business-card__card--column {
+    flex-direction: row;
+    align-items: flex-start; }
+  .card__img-block--end {
+    align-self: flex-end; } }
+
+@media screen and (max-width: 992px) {
+  .preheader__background--business {
+    background: linear-gradient(97.18deg, #020204 7.92%, #154E3F 100.31%);
+    padding-bottom: 30px; }
+  .preheader__background--business::after {
+    width: 585px;
+    height: 255px;
+    bottom: unset;
+    top: 0;
+    background-size: contain;
+    background-repeat: no-repeat;
+    right: 0; } }
+
+@media screen and (max-width: 768px) {
+  .preheader__background--business {
+    padding-top: 60px; }
+  .preheader__background--business::after {
+    width: 502px;
+    height: 189px;
+    right: -120px; }
+  .business-card__card--column {
+    overflow-x: hidden; } }
+
+@media screen and (max-width: 576px) {
+  .preheader__background--business {
+    padding-top: 60px; }
+  .preheader__background--business::after {
+    width: 443px;
+    height: 169px;
+    right: -130px; }
+  .business-card__wrapper {
+    display: grid;
+    gap: 15px;
+    grid-template-areas: "A A A A   A A A A   A A A A" "C C C C   C C C C   C C C C" "E E E E   E E E E   E E E E"  "B B B B   B B B B   B B B B" "D D D D   D D D D   D D D D" "F F F F   F F F F   F F F F" "G G G G   G G G G   G G G G"; }
+  .grid-1 {
+    grid-area: A;
+    height: auto; }
+  .grid-2 {
+    grid-area: B;
+    height: auto; }
+  .grid-3 {
+    grid-area: C;
+    height: auto; }
+  .grid-4 {
+    grid-area: D;
+    height: auto; }
+  .grid-5 {
+    grid-area: E;
+    height: auto; }
+  .grid-6 {
+    grid-area: F;
+    height: auto; }
+  .grid-7 {
+    grid-area: G;
+    height: auto; } }
+
+@media screen and (max-width: 425px) {
+  .card__title--business {
+    margin-bottom: 5px;
+    line-height: 99.5%; }
+  .preheader__background--business::after {
+    width: 443px;
+    height: 169px;
+    right: -220px; }
+  .card__img-block {
+    max-width: 100px; }
+  .business-card__card {
+    overflow: hidden; } }
 
 @media screen and (max-width: 992px) {
   .footer__wrapper {

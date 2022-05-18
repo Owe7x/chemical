@@ -1,0 +1,122 @@
+@media screen and (max-width: 1340px) {
+    .preheader__background--business::after {
+        right: 5%;
+    }
+}
+@media screen and (max-width: 1200px) {
+    .business-card__wrapper {
+        grid-template-areas:
+        "A A A A   A A C C   C C C C" 
+        "A A A A   A A E E   E E E E"
+        "B B B B   B B B B   B B B B"
+        "D D D D   D D D D   D D D D"
+        "F F F F   F F F F   F F F F"
+        
+        "G G G G   G G G G   G G G G";
+    }
+    .card__title--business {
+        margin-bottom: 23px;
+    }
+    .business-card__card--column {
+        flex-direction: row;
+        align-items: flex-start;
+    }
+    .card__img-block--end {
+        align-self: flex-end;
+    }
+}
+@media screen and (max-width: 992px) {
+    .preheader__background--business {
+        background: linear-gradient(97.18deg, #020204 7.92%, #154E3F 100.31%);
+        padding-bottom: 30px;
+    }
+    .preheader__background--business::after {
+        width: 585px;
+        height: 255px;
+        bottom: unset;
+        top: 0;
+        background-size: contain;
+        background-repeat: no-repeat;
+        right: 0;
+    }
+}
+@media screen and (max-width: 768px) { 
+    .preheader__background--business {
+        padding-top: 60px;
+    }
+    .preheader__background--business::after {
+        width: 502px;
+        height: 189px;
+        right: -120px;
+    }
+    .business-card__card--column {
+        overflow-x: hidden;
+    }
+}
+@media screen and (max-width: 576px) { 
+    .preheader__background--business {
+        padding-top: 60px;
+    }
+    .preheader__background--business::after {
+        width: 443px;
+        height: 169px;
+        right: -130px;
+    }
+    .business-card__wrapper {
+        display: grid;
+        gap: 15px;
+        grid-template-areas:
+        "A A A A   A A A A   A A A A"
+        "C C C C   C C C C   C C C C"
+        "E E E E   E E E E   E E E E" 
+        "B B B B   B B B B   B B B B"
+        "D D D D   D D D D   D D D D"
+        "F F F F   F F F F   F F F F"
+        "G G G G   G G G G   G G G G";
+    }
+    .grid-1 {
+        grid-area: A;
+        height: auto;
+    }
+    .grid-2 {
+        grid-area: B;
+        height: auto;
+    }
+    .grid-3 {
+        grid-area: C;
+        height: auto;
+    }
+    .grid-4 {
+        grid-area: D;
+        height: auto;
+    }
+    .grid-5 {
+        grid-area: E;
+        height: auto;
+    }
+    .grid-6 {
+        grid-area: F;
+        height: auto;
+    }
+    .grid-7 {
+        grid-area: G;
+        height: auto;
+    }
+}
+@media screen and (max-width: 425px) { 
+    .card__title--business {
+        margin-bottom: 5px;
+        line-height: 99.5%;
+    }
+    .preheader__background--business::after {
+        width: 443px;
+        height: 169px;
+        right: -220px;
+    }
+    .card__img-block {
+        max-width: 100px;
+    }
+    .business-card__card {
+        overflow: hidden;
+    }
+}

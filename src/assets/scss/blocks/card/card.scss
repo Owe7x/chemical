@@ -20,6 +20,14 @@
     backdrop-filter: blur(100px);
     filter: drop-shadow(15px 30px 40px rgba(0, 0, 0, 0.15));
 }
+.card__background--green-light {
+    background: #83D2B6; 
+    filter: drop-shadow(15px 30px 40px rgba(0, 0, 0, 0.15));
+}
+.card__background--green-medium {
+    background: #207660;
+    filter: drop-shadow(15px 30px 40px rgba(0, 0, 0, 0.15));
+}
 .card__title {
     font-weight: 400;
     font-size: 20px;
@@ -36,4 +44,13 @@
 }
 .card__width--306 {
     max-width: 306px;
+}
+.card__subtitle {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 130%;
+    color: #000000;
+}
+.card__subtitle--white {
+    color: #fff;
 }
