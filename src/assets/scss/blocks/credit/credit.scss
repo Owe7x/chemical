@@ -1,0 +1,111 @@
+.credit {
+    margin: 130px 0;
+    overflow-x: hidden;
+}
+.credit__title {
+    font-weight: 700;
+    font-size: 42px;
+    line-height: 130%;
+    color: #000000;
+    margin-bottom: 60px;
+}
+.credit__slider {
+    display: flex;
+    column-gap: 12px;
+    height: 187px;
+    margin-bottom: 120px;
+}
+.card__credit {
+    display: flex!important;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 180px!important;
+    filter: none;
+    overflow: hidden;
+}
+.card-credit__title {
+    padding: 20px 0 0 20px;
+}
+.card-credit__img-block {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-right: 10px;
+}
+.credit-term {
+    margin-bottom: 170px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    row-gap: 30px;
+}
+.credit-term__title {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 130%;
+    color: #154E3F
+}
+.credit-term__subtitle {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 130%;
+    color: #000000;
+}
+.credit-term__block {
+    max-width: 250px;
+}
+.credit-securing__text-green {
+    font-weight: 700;
+    font-size: 19px;
+    line-height: 130%;
+    color: #154E3F;
+    width: max-content;
+    position: relative;
+    margin-bottom: 25px;
+}
+.credit-securing__text-green::after {
+    display: block;
+    content: '';
+    background-image: url(../images/credit/icon.svg);
+    width: 21px;
+    height: 14px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-7px);
+    right: -40px;
+}
+.credit__ul {
+    padding-left: 15px;
+    margin-bottom: 45px;
+}
+.credit__li {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 130%;
+    color: #000000;
+    margin-bottom: 15px;
+    list-style: url('../images/credit/icon (2).svg');
+    padding-left: 10px;
+}
+.credit-securing__text {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 130%;
+    color: #000000;
+    margin-bottom: 15px;
+}
+.credit-mb--170 {
+    margin-bottom: 170px;
+}
+.credit-term__title--mb {
+    margin-bottom: 40px;
+}
+.credit__link {
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 130%;
+    text-decoration-line: underline;
+    color: #154E3F;
+    display: block;
+    margin-bottom: 10px;
+}

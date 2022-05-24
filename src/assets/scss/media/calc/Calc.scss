@@ -1,0 +1,21 @@
+@media screen and (max-width: 1340px) { 
+    .calc {
+        max-width: 1100px;
+        margin: 0 auto;
+    }
+}
+@media screen and (max-width: 1200px) { 
+    .calc {
+        max-width: 930px;
+        margin: 0 auto;
+    }
+}
+@media screen and (max-width: 992px) { 
+    .calc {
+        max-width: 690px;
+        margin: 0 auto;
+    }
+    .calc__title {
+        padding: 0 15px;
+    }
+}

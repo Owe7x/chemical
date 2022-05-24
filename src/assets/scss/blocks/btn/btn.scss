@@ -11,11 +11,17 @@
     background: #154E3F;
     color: #fff;
 }
+.btn--green-light {
+    background: #207660;
+}
 .btn--white {
     background: #FFFFFF;
 }
 .btn--gray {
     background: #ECF2F1;
+}
+.btn--w_489 {
+    max-width: 489px;
 }
 .btn--w_388 {
     max-width: 388px;
@@ -55,4 +61,7 @@
 }
 .btn__link--white {
     color: #fff;
+}
+.btn--center {
+    margin: 10px auto;
 }

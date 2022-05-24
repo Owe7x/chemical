@@ -1,0 +1,27 @@
+@media screen and (max-width: 576px) {
+    .credit {
+        margin: 65px 0;
+    }
+    .credit-term {
+        row-gap: 30px;
+    }
+    .credit-term__block {
+        max-width: 100%;
+    }
+    .credit-securing__text-green {
+        width: 100%;
+    }
+    .credit__title {
+        font-size: 30px;
+        margin-bottom: 20px;
+    }
+    .credit__slider {
+        margin-bottom: 60px;
+    }
+    .credit-term {
+        margin-bottom: 60px;
+    }
+    .credit-mb--170 {
+        margin-bottom: 60px;
+    }
+}

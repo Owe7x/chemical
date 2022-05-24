@@ -1,0 +1,271 @@
+<div class="page template-property-sales">
+    <div class="property-sales preheader preheader__all d-flex pt-0">
+        <div class="illustration" style="background-image:url(/assets/images/property-sales/hero.png)"></div>
+        <div class="container mt-auto pt-3">
+            <div class="row">
+                <div class="col-12 col-lg-6 col-xl-5 offset-lg-1 px-4 px-md-0">
+                    <h1 class="preheader__title mb-3 mb-md-0">Реализация <br class="d-xl-none">залогового
+                        имущества</h1>
+                </div>
+            </div>
+        </div>
+    </div>
+    <section class="services pt-4">
+        <div class="container pt-3">
+            <h2 class="h-42">ПАО Комбанк «Химик» реализует следующее имущество:</h2>
+            <form action="<?php echo site_url() ?>/wp-admin/admin-ajax.php" method="POST" id="filter-form">
+                <!-- <input type="hidden" id="region-input" name="regionFilter" value="<?= $regions[0]->term_id; ?>"/>
+                                <input type="hidden" id="service-input" name="serviceFilter" value="<?= $services[0]->term_id; ?>"/> -->
+                <!-- РЫБА -->
+                <input type="hidden" id="region-input" name="regionFilter" value="12" />
+                <input type="hidden" id="service-input" name="serviceFilter" value="1" />
+                <!-- /РЫБА -->
+
+                <div class="row">
+                    <!-- PHP для фильтра по регионам. Здесь и дальше по коду в файле .php все раскомментить, рыбу удалить
+                                        <?php if( $services = get_terms( array(
+                                                'taxonomy' => 'service',
+                                                'orderby' => 'name'
+                                            ) ) ) : ?>
+                                    -->
+                    <div class="col-12 col-lg-7 col-xl-9">
+                        <div class="service-filter d-flex flex-wrap gap-2 mb-3">
+                            <!-- <?php 
+                                            firstService = ' active';
+                                            foreach ( $services as $service ) : ?> 
+                                            <button type="button" class="btn btn-service <?= firstService ?>" data-filter="service" data-filter-id="<?= $service->term_id; ?>"><?= $service->name ?></button>
+                                        <?php 
+                                            firstService = '';
+                                            endforeach; 
+                                        ?> -->
+
+                            <!-- РЫБА -->
+                            <button type="button" class="btn btn-service active" data-filter="service"
+                                data-filter-id="1">Коммерческая недвижимость</button>
+                            <button type="button" class="btn btn-service" data-filter="service" data-filter-id="2">Жилая
+                                недвижимость</button>
+                            <button type="button" class="btn btn-service" data-filter="service"
+                                data-filter-id="3">Транспорт</button>
+                            <button type="button" class="btn btn-service" data-filter="service"
+                                data-filter-id="4">Земельные участки</button>
+                            <!-- /РЫБА -->
+
+                        </div>
+                    </div>
+
+                    <!-- <?php endif; ?>-->
+                    <!-- PHP для фильтра по регионам
+                                        <?php if( $regions = get_terms( array(
+                                                'taxonomy' => 'region',
+                                                'orderby' => 'name'
+                                            ) ) ) : ?>
+                                    -->
+                    <div class="col-12 col-lg-5 col-xl-3 d-flex justify-content-end mb-md-4">
+                        <div class="region-filter dropdown">
+                            <button class="dropdown-toggle" type="button" id="region-select" data-bs-toggle="dropdown"
+                                aria-haspopup="true" aria-expanded="false" data-bs-offset="0,20">
+                                <!-- <?= $regions[0]->name; ?> -->
+                                <!-- РЫБА -->
+                                Московская область
+                                <!-- /РЫБА -->
+                            </button>
+                            <ul class="dropdown-menu" aria-labelledby="region-select">
+
+                                <!-- <?php 
+                                                firstRegion = ' active" aria-current="true" ';
+                                                foreach ( $regions as $region ) : ?>
+                                                <li>
+                                                    <button class="dropdown-item<?= firstRegion ?> data-filter="region" data-filter-id="<?= $region->term_id; ?>"><?= $region->name; ?></button>
+                                                </li>
+                                                firstRegion = '" ';
+                                            <?php endforeach; ?> -->
+
+                                <!-- РЫБА -->
+                                <li>
+                                    <button type="button" class="dropdown-item active" data-filter="region"
+                                        data-filter-id="12" aria-current="true">Московская область</button>
+                                </li>
+                                <li>
+                                    <button type="button" class="dropdown-item" data-filter="region"
+                                        data-filter-id="13">Ленинградская область</button>
+                                </li>
+                                <li>
+                                    <button type="button" class="dropdown-item" data-filter="region"
+                                        data-filter-id="14">Штатец Айова</button>
+                                </li>
+                                <!-- /РЫБА-->
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- <?php endif; ?>-->
+                </div>
+            </form>
+        </div>
+        <div class="container-fluid my-3 mt-md-4">
+            <div class="row no-gutters my-auto justify-content-center">
+                <div class="col-12 p-0 services-wrapper">
+
+                    <!-- <?php
+                                $args = [
+                                    'post_type' => 'properties-for-sale',
+                                    'posts_per_page' => -1,
+                                    'order_by' => 'date',
+                                    'order' => 'desc'
+                                ];
+                
+                                $args['tax_query'][] = [
+                                    'taxonomy' => 'region',
+                                    'field' => 'id',
+                                    'terms' => $regions[0]->term_id,
+                                ];
+                                
+                                $args['tax_query']['relation'] = 'AND';
+                                $args['tax_query'][] = [
+                                    'taxonomy' => 'service',
+                                    'field' => 'id',
+                                    'terms' => $services[0]->term_id,
+                                ];
+                
+                                $propertiesForSale = new WP_Query($args);
+                                
+                                if($propertiesForSale->have_posts()): ?>
+                                    <div id="properties-for-sale" class="d-flex h-scroll">
+                                    <?php
+                                    while($propertiesForSale->have_posts()) : $property->the_post(); ?>
+                                        <a href="<?= the_permalink(); ?>" class="card">
+                                            <div class="card-img">
+                                                <?php 
+                                                if(has_post_thumbnail()) {
+                                                    the_post_thumbnail(array(274, 180), array('class' => 'card-img-top'));
+                                                } else {
+                                                    echo '<img src="<?= get_stylesheet_directory_uri() ?>/assets/images/services-placeholder.jpg" alt="<?= the_title(); ?>"/>';
+                                                } ?>
+                                            </div>
+                                            <div class="card-body">
+                                                <h5 class="card-title"><?php get_the_title(); ?></h5>
+                                                <p class="card-text"><?php the_content(); ?></p>
+                                            </div>
+                                        </a>
+                                    <?php
+                                    endwhile;
+                                    ?>
+                                    </div>
+                                    <?php 
+                                    wp_reset_postdata(); 
+                                endif; 
+                                ?>
+                                -->
+
+                    <!-- РЫБА -->
+                    <div id="properties-for-sale" class="d-flex h-scroll">
+                        <a href="#" class="card">
+                            <div class="card-img">
+                                <img src="./assets/images/property-sales/services-placeholder.jpg" class="img-fluid"
+                                    alt="Lorem ipsum dolor sit amet, consectetur" />
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title">Lorem ipsum dolor sit amet, consectetur</h5>
+                                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                                    eiusmod
+                                    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+                            </div>
+                        </a>
+                        <a href="#" class="card">
+                            <div class="card-img">
+                                <img src="./assets/images/property-sales/services-placeholder2.jpg" class="img-fluid"
+                                    alt="Lorem ipsum dolor sit amet, consectetur" />
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title">Lorem ipsum dolor sit amet, consectetur</h5>
+                                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                                    eiusmod
+                                    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+                            </div>
+                        </a>
+                        <a href="#" class="card">
+                            <div class="card-img">
+                                <img src="./assets/images/property-sales/services-placeholder3.jpg" class="img-fluid"
+                                    alt="Lorem ipsum dolor sit amet, consectetur" />
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title">Lorem ipsum dolor sit amet, consectetur</h5>
+                                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                                    eiusmod
+                                    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+                            </div>
+                        </a>
+                        <a href="#" class="card">
+                            <div class="card-img">
+                                <img src="./assets/images/property-sales/services-placeholder4.jpg" class="img-fluid"
+                                    alt="Lorem ipsum dolor sit amet, consectetur" />
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title">Lorem ipsum dolor sit amet, consectetur</h5>
+                                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                                    eiusmod
+                                    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+                            </div>
+                        </a>
+                        <a href="#" class="card">
+                            <div class="card-img">
+                                <img src="./assets/images/property-sales/services-placeholder3.jpg" class="img-fluid"
+                                    alt="Lorem ipsum dolor sit amet, consectetur" />
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title">Lorem ipsum dolor sit amet, consectetur</h5>
+                                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                                    eiusmod
+                                    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+                            </div>
+                        </a>
+                        <a href="#" class="card">
+                            <div class="card-img">
+                                <img src="./assets/images/property-sales/services-placeholder2.jpg" class="img-fluid"
+                                    alt="Lorem ipsum dolor sit amet, consectetur" />
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title">Lorem ipsum dolor sit amet, consectetur</h5>
+                                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                                    eiusmod
+                                    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+                            </div>
+                        </a>
+                        <a href="#" class="card">
+                            <div class="card-img">
+                                <img src="./assets/images/property-sales/services-placeholder3.jpg" class="img-fluid"
+                                    alt="Lorem ipsum dolor sit amet, consectetur" />
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title">Lorem ipsum dolor sit amet, consectetur</h5>
+                                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                                    eiusmod
+                                    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+                            </div>
+                        </a>
+                        <a href="#" class="card">
+                            <div class="card-img">
+                                <img src="./assets/images/property-sales/services-placeholder4.jpg" class="img-fluid"
+                                    alt="Lorem ipsum dolor sit amet, consectetur" />
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title">Lorem ipsum dolor sit amet, consectetur</h5>
+                                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                                    eiusmod
+                                    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+                            </div>
+                        </a>
+                    </div>
+                    <!-- /РЫБА-->
+                </div>
+            </div>
+            <div class="row justify-content-center more">
+                <div class="col text-center">
+                    <a type="button" href="#"
+                        class="btn btn-primary btn--w_211 btn--h_41 btn__link--fs_16 mt-5 mb-4 mb-xl-5 mx-auto">Узнать
+                        подробности</a>
+                    <span class="text-muted text--14">Данные предложения не являются публичной офертой</span>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>

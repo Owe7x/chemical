@@ -1,0 +1,83 @@
+@media screen and (max-width: 1200px) { 
+    .lot-card__block:last-child {
+        padding: 19px 25px 13px 22px;
+    }
+    .lot-card__card {
+        padding: 0 15px;
+    }
+}
+@media screen and (max-width: 992px) { 
+    .lot-card__block-btns {
+        flex-direction: column;
+        row-gap: 20px;
+        align-items: center;
+    }
+}
+@media screen and (max-width: 680px) { 
+    .lot-card__card {
+        flex-direction: column;
+        padding: 0;
+    }
+    .lot-card__block {
+        width: 100%;
+    }
+    .lot-card__block:last-child {
+        border-radius: unset;
+    }
+    .lot-card__block-btns {
+        flex-direction: row;
+    }
+}
+@media screen and (max-width: 576px) { 
+    .lot-card {
+        margin: 55px 0 0;
+    }
+    .lot-card__title {
+        font-size: 36px;
+    }
+    .lot-card__block-title {
+        font-size: 22px;
+        margin-bottom: 20px;
+    }
+    .lot-card__block-location {
+        font-size: 12px;
+        margin-bottom: 20px;
+    }
+    .lot-card__block-price {
+        font-size: 22px;
+        margin-bottom: 20px;
+    }
+    .lot-card__block-desck {
+        font-size: 16px;
+    }
+    .lot-card__card {
+        filter: unset;
+    }
+    .lot-card__subtitle {
+        background: #fff;
+        margin: 0;
+        padding-top: 20px;
+    }
+    .search--lot-card {
+        margin-top: 0px;
+    }
+    .lot-card__block-btns {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .lot-card__block-btn {
+        max-width: 100%;
+        flex-direction: row;
+        column-gap: 10px;
+        align-items: center;
+        justify-content: space-between;
+    }
+}
+@media screen and (max-width: 425px) { 
+    .lot-card__block:last-child {
+        padding: 10px 16px 10px;
+    }
+    .lot-card__subtitle {
+        padding: 40px 15px 0;
+    }
+}

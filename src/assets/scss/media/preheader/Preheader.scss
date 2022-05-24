@@ -7,6 +7,22 @@
     .preheader__background--main::after {
         right: 5%;
     }
+    .preheader__background--r-m-services::after {
+        right: 0;
+    }
+    .preheader__background--s-deposits::after {
+        right: 5%;
+    }
+    .preheader__background--for-life::after {
+        right: 0;
+    }
+}
+@media screen and (max-width: 1340px) { 
+    .preheader__background--r-m-services::after {
+        width: 544px;
+        height: 362px;
+        right: 0;
+    }
 }
 @media screen and (max-width: 1200px) {
     .preheader__background--main::after {
@@ -16,10 +32,45 @@
         background-size: contain;
         right: -50px;
     }
+    .preheader__background--credit::after {
+        width: 487px;
+        height: 591px;
+        bottom: 7%;
+        right: 5%;
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
     .preheader__container {
         padding: 0 10px;
     }
-    
+    .preheader__background--r-m-services::after {
+        width: 444px;
+        height: 362px;
+        right: 0;
+    }
+    .preheader__background--lot-card::after {
+        width: 563px;
+        height: 343px;
+        right: 5%;
+    }
+    .preheader__background--s-deposits::after {
+        width: 508px;
+        height: 531px;
+        background-size: contain;
+        bottom: 0;
+        right: 0px;
+    }
+    .preheader__background--for-life::after {
+        width: 800px;
+        height: 299px;
+    }
+    .preheader__background--c-transactions::after {
+        width: 428px;
+        height: 421px;
+        background-size: contain;
+        bottom: calc(50% - 165px);
+        right: 5%;
+    }
 }
 @media screen and (max-width: 992px) {
     .preheader {
@@ -39,8 +90,78 @@
         left: calc(50% - 270px);
         bottom: 50px;
     }
+    .preheader__background--credit::after {
+        width: 587px;
+        height: 691px;
+        bottom: 7%;
+        right: calc(50% - 300px);
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+    .preheader__background--r-m-services::after {
+        width: 653px;
+        height: 536px;
+        background-image: url(../images/r-m-services/preheader-bg__mb.png);
+        right: calc(50% - 320px);
+    }
+    .preheader__background--lot-card::after {
+        width: 458px;
+        height: 539px;
+        background-image: url(../images/lot-card/preheader-bg__mb.png);
+        right: 0;
+    }
+    .preheader__background--s-deposits::after {
+        width: 558px;
+        height: 581px;
+        bottom: 5%;
+        right: calc(50% - 280px);
+    }
+
+    .preheader__all-2 {
+        padding-bottom: 560px;
+    }
     .bg-mobile {
         background: linear-gradient(97.18deg, #020204 7.92%, #154E3F 100.31%);
+    }
+    .preheader__title--max-width {
+        max-width: 500px;
+        padding-left: 100px;
+    }
+    .preheader__background--for-life::after {
+        width: 765px;
+        background-size: contain;
+        background-repeat: no-repeat;
+        height: 232px;
+        right: -150px;
+    }
+    .preheader__background--c-transactions::after {
+        width: 528px;
+        height: 521px;
+        background-size: contain;
+        bottom: 10%;
+        right: calc(50% - 265px);
+    }
+    .preheader__background--a-bank {
+        border-radius: unset;
+    }
+    .preheader__background--a-bank::after {
+        right: 0;
+        width: 525px;
+        height: 231px;
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+}
+@media screen and (max-width: 768px) { 
+    .preheader__background--for-life::after {
+        width: 676px;
+        background-repeat: no-repeat;
+        height: 288px;
+        right: -150px;
+        background-image: url(../images/for-life/preheader-bg__mb.png);
+    }
+    .preheader__background--a-bank::after {
+        right: -200px;
     }
 }
 @media screen and (max-width: 576px) {
@@ -60,8 +181,66 @@
         background-repeat: no-repeat;
         left: calc(50% - 200px);
     }
+    .preheader__background--credit::after {
+        width: 387px;
+        height: 441px;
+        bottom: 0;
+        right: calc(50% - 190px);
+    }
+    .preheader__background--s-deposits::after {
+        width: 458px;
+        height: 481px;
+        bottom: 0;
+        right: calc(50% - 220px);
+    }
     .preheader__all {
         padding-bottom: 470px;
+    }
+    .bg-mobile--radius {
+        border-radius: 0px 0px 50px 50px;
+    }
+    .preheader__title--max-width {
+        padding-left: 0px;
+    }
+    .preheader__background--r-m-services::after {
+        width: 353px;
+        height: 304px;
+        background-size: contain;
+        background-repeat: no-repeat;
+        right: calc(50% - 170px);
+    }
+    .preheader__background--lot-card::after {
+        width: 320px;
+        height: 381px;
+        background-size: contain;
+        background-repeat: no-repeat;
+        right: 0;
+    }
+    .preheader__background--c-transactions::after {
+        width: 328px;
+        height: 331px;
+        background-size: contain;
+        bottom: 10%;
+        right: calc(50% - 165px);
+    }
+    .preheader__background--for-life::after {
+
+        right: -250px;
+        background-image: url(../images/for-life/preheader-bg__mb.png);
+    }
+    .preheader__all-2 {
+        padding-bottom: 360px;
+    }
+    .preheader__all-2 .preheader__title {
+        font-size: 38px;
+    }
+    .preheader__title--max-width {
+        max-width: 400px;
+    }
+    .preheader__background--a-bank::after {
+        width: 500px;
+        height: 212px;
+        right: -200px;
     }
 }
 @media screen and (max-width: 425px) {
@@ -70,5 +249,15 @@
     }
     .preheader__container {
         padding: 0 15px;
+    }
+    .preheader__background--s-deposits::after {
+        width: 358px;
+        height: 371px;
+        bottom: 5%;
+        
+        right: calc(50% - 180px);
+    }
+    .preheader__background--a-bank::after {
+        right: -300px;
     }
 }

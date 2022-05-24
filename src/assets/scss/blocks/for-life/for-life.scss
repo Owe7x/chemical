@@ -1,0 +1,57 @@
+.for-life {
+    margin-top: 80px;
+}
+.for-life__text {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 130%;
+    color: #154E3F;
+    margin-bottom: 15px;
+}
+.for-life__text-2 {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 130%;
+    color: #000000;
+}
+.for-life__cards {
+    max-width: 1296px;
+    margin: 90px auto ;
+    display: grid;
+    gap: 24px;
+    grid-template-areas:
+    "A A A A   A A A B   B B B B"
+    "C C C C   C D D D   D D D D"
+    "E E E E   E E E F   F F F F";
+}
+.gr-1 {
+    grid-area: A;
+}
+.gr-2 {
+    grid-area: B;
+}
+.gr-3 {
+    grid-area: C;
+}
+.gr-4 {
+    grid-area: D;
+}
+.gr-5 {
+    grid-area: E;
+}
+.gr-6 {
+    grid-area: F;
+}
+.for-life__card {
+    height: 169px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    overflow: hidden;
+}
+.card__group--for-life {
+    padding: 20px 0 20px 20px;
+}
+.card__img-block--for-life {
+    padding: 10px;
+}

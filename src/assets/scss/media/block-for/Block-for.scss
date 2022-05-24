@@ -17,16 +17,11 @@
 }
 @media screen and (max-width: 768px) {
     .block-for {
-        padding: 0 17.5px;
+        padding: 0 0;
     }
     .block-for__wrapper {
         row-gap: 20px;
         column-gap: 10px;
         justify-content: center;
-    }
-}
-@media screen and (max-width: 425px) {
-    .block-for {
-        padding: 0 7.5px;
     }
 }

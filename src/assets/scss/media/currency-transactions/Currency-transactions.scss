@@ -1,0 +1,29 @@
+@media screen and (max-width: 992px) {
+    .c-transactions__block {
+        padding: 30px 30px;
+    }
+}
+@media screen and (max-width: 768px) {
+    .c-transactions__item {
+        flex-direction: column;
+        justify-content: center;
+        row-gap: 20px;
+    }
+    .c-transactions__li {
+        text-align: center;
+    }
+}
+@media screen and (max-width: 576px) {
+    .c-transactions__item {
+        padding: 15px 15px;
+    }
+    .c-transactions__block {
+        padding: 15px;
+    }
+    .c-transactions__title {
+        font-size: 26px;
+    }
+    .c-transactions__title--center {
+        margin-bottom: 0px;
+    }
+}
